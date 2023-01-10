@@ -1,7 +1,39 @@
-* {
-  background-color: bisque;
+body {
+  text-align: center;
+  background-color: #fffbdb;
 }
 
-.title {
-  text-align: center;
+#title {
+  color: #404040;
+  margin: 10% 0 0 0;
+}
+
+.loginBox {
+  width: 33%;
+  height: 130px;
+  padding: 1%;
+  margin: 5% 0 1% 32.5%;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -1px -1px 11px 5px rgba(240, 162, 2, 0.13);
+}
+
+.loginBox img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1%;
+}
+
+.loginBox button {
+  margin: 0 0 0 3%;
+  color: #fffbdb;
+  background: #f0a202;
+}
+
+#developer {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #404040;
 }
