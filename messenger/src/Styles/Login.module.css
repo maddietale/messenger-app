@@ -37,3 +37,25 @@ body {
   font-weight: bold;
   color: #404040;
 }
+
+@media screen and (max-width: 700px) {
+  #title {
+    font-size: 1.5rem;
+  }
+
+  .loginBox {
+    width: 33%;
+    height: 100px;
+    overflow: scroll;
+    margin: 5% 0 2% 32%;
+  }
+
+  .loginBox img {
+    width: 15%;
+    height: 30px;
+  }
+
+ .loginBox button {
+    font-size: 0.8rem;
+  }
+}
