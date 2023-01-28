@@ -1,61 +1,23 @@
 body {
   text-align: center;
+  color: #212121;
   background-color: #fffbdb;
 }
 
-#title {
-  color: #404040;
-  margin: 10% 0 0 0;
+.container {
+  display: flex;
+}
+
+#logo {
+  text-align: left;
 }
 
 .loginBox {
-  width: 33%;
-  height: 130px;
-  padding: 1%;
-  margin: 5% 0 1% 32.5%;
-  display: flex;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: center;
-  box-shadow: -1px -1px 11px 5px rgba(240, 162, 2, 0.13);
+  min-width: 35%;
+  max-width: 35%;
 }
 
-.loginBox img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1%;
-}
-
-.loginBox button {
-  margin: 0 0 0 3%;
-  color: #fffbdb;
-  background: #f0a202;
-}
-
-#developer {
-  font-size: 0.6rem;
-  font-weight: bold;
-  color: #404040;
-}
-
-@media screen and (max-width: 700px) {
-  #title {
-    font-size: 1.5rem;
-  }
-
-  .loginBox {
-    width: 33%;
-    height: 100px;
-    overflow: scroll;
-    margin: 5% 0 2% 32%;
-  }
-
-  .loginBox img {
-    width: 15%;
-    height: 30px;
-  }
-
- .loginBox button {
-    font-size: 0.8rem;
-  }
+.icon {
+  width: 150px;
+  height: 150px;
 }
