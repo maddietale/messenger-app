@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from '../Styles/Login.module.css';
 import googleIcon from '../Images/google-icon.png';
-import wallpaper from '../Images/login-wallpaper.jpg';
+import wallpaper from '../Images/login-wallpaper.png';
 import plotLogo1 from '../Images/Plot-logo-1.png';
 import plotLogo2 from '../Images/Plot-logo-2.png';
 
@@ -22,7 +22,7 @@ const Login = () => {
                     </div>
 
                     <div id={Style.login}>
-                        <form>
+                        <form className='pure-form'>
                             <label for='emailInput'>Email</label>
                             <br />
                             <input id='emailInput' type='email' placeholder='YourEmail@gmail.com' />
@@ -32,19 +32,19 @@ const Login = () => {
                             <input id='passInput' type='password' />
                             <br />
                             <span> Forgot Password? </span>
-                            <input id='subInput' type='submit' value='Sign In' />
+                            <input className='pure-button' id='subInput' type='submit' value='Sign In' />
                         </form>
                     </div>
 
                     <div id={Style.signup}>
-                        <button>
-                            <img className={Style.icon} src={googleIcon} />
+                        <button className='pure-button'>
+                            <img className={Style.icon} src={googleIcon} alt='Google Logo' />
                             Sign In with Google
                         </button>
                     </div>
                 </div>
 
-                <img src={wallpaper} className={Style.loginWallpaper}>
+                <img src={wallpaper} className={Style.loginWallpaper} alt='Wallpaper'>
                 </img>
             </div>
         </>
