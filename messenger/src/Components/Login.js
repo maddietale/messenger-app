@@ -1,5 +1,9 @@
 import React from 'react';
+import firebase from 'firebase/compat/app';
+import { auth } from '../firebase';
+// Styles
 import Style from '../Styles/Login.module.css';
+// Images
 import wallpaper from '../Images/login-wallpaper.jpeg';
 import frameLogo1 from '../Images/Plot-logo-1.png';
 
@@ -16,10 +20,10 @@ const Login = () => {
                         <h1>
                             Welcome to "Frame"
                         </h1>
-                        <button className='pure-button'>
-                        <i class="fa fa-google fa-m" />
+                        <div className='pure-button' onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
+                            <i className="fa fa-google fa-m" />
                             Sign In with Google
-                        </button>
+                        </div>
                     </div>
                     <span>made with ♥️ by torabiika</span>
                 </div>

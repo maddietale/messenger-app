@@ -30,20 +30,20 @@
   cursor: pointer;
 }
 
-#login button{
+#login div{
   font-size: 1.2rem;
   font-weight: bold;
   width: 60%;
-  height: 50px;
   color: #f9fff6;
   background-color: #658177;
+  overflow: scroll;
 }
 
 #login i{
   margin: 0 8% 0 0;
 }
 
-#login button:hover{
+#login div:hover{
   background-color: #526960;
 }
 
