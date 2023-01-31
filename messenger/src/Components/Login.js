@@ -1,8 +1,12 @@
 import React from 'react';
 import firebase from 'firebase/compat/app';
+
+// Imports
 import { auth } from '../firebase';
+
 // Styles
 import Style from '../Styles/Login.module.css';
+
 // Images
 import wallpaper from '../Images/login-wallpaper.jpeg';
 import frameLogo1 from '../Images/Plot-logo-1.png';
