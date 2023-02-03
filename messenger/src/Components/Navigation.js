@@ -1,8 +1,6 @@
 import React from 'react';
-
 // Styles
 import Style from '../Styles/Navigation.module.css'
-
 // Images
 import frameLogo1 from '../Images/Plot-logo-1.png';
 

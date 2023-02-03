@@ -6,51 +6,59 @@
 }
 
 .box {
-  min-width: 35%;
-  max-width: 35%;
+  min-width: 30%;
+  max-width: 30%;
 }
 
-#logo {
+#logoBox {
   text-align: left;
 }
 
-#logo img {
+#logoBox img {
   width: 100px;
   height: 100px;
-  margin: 10% 0 10% 10%;
+  margin: 10% 0 0 10%;
 }
 
-#login {
+#loginBox {
   width: 100%;
-  margin: 25% 0 60% 0;
+  margin: 15% 0 70% 0;
 }
 
-#login h1{
-  margin-bottom: 5%;
-  cursor: pointer;
+#loginBox h1{
+  margin: 0 0 2% 0;
 }
 
-#login div{
+#loginBox span{
+  display: block;
+  margin: 0 0 30% 0;
+}
+
+#loginBox div{
+  width: 60%;
+  overflow: scroll;
+  color: #f9fff6;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 60%;
-  color: #f9fff6;
   background-color: #658177;
-  overflow: scroll;
+  box-shadow: 0 1px 8px #888888;
 }
 
-#login i{
+#loginBox i{
   margin: 0 8% 0 0;
 }
 
-#login div:hover{
+#loginBox div:hover{
   background-color: #526960;
 }
 
-#login img {
-  width: 30px;
-  height: 30px;
-  margin: 2% 5% 0 0;
+#footerBox a{
+  color: #404040;
+  text-decoration: none;
+}
+
+#footerBox a:hover{
+  color: #526960;
 }
 
 .wallpaper {

@@ -3,10 +3,8 @@ import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import { ChatEngine } from 'react-chat-engine';
 import axios from 'axios';
-
 // Components
 import Navigation from './Navigation';
-
 // Contexts
 import { AuthContext } from '../Contexts/AuthContextProvider';
 
