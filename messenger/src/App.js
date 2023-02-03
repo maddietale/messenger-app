@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-
 // Components
 import Login from './Components/Login';
 import Chats from './Components/Chats';
-
 // Contexts
 import AuthContextProvider from './Contexts/AuthContextProvider';
+// Styles
+import "./Styles/App.css"
 
 const App = () => {
   return (
