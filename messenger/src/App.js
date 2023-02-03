@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 // Components
 import Login from './Components/Login';
 import Chats from './Components/Chats';
+import Loading from './Components/Loading';
 // Contexts
 import AuthContextProvider from './Contexts/AuthContextProvider';
 // Styles

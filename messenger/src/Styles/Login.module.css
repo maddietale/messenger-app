@@ -10,8 +10,8 @@
 
 .loginCard {
   width: 30%;
-  height: 70%;
-  padding: 4%;
+  height: 75%;
+  padding: 3%;
   overflow: scroll;
   color: #5b4dcd;
   margin: 6% 12% 0 0;
@@ -37,7 +37,7 @@
   overflow: scroll;
   color: #ffffff;
   font-size: 1.2rem;
-  margin: 31% 0 48% 0;
+  margin: 33% 0 55% 0;
   border-radius: 30px;
   background-color: #5b4dcd;
   box-shadow: 0 1px 8px #888888;

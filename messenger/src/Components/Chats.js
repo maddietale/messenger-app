@@ -5,8 +5,10 @@ import { ChatEngine } from 'react-chat-engine';
 import axios from 'axios';
 // Components
 import Navigation from './Navigation';
+
 // Contexts
 import { AuthContext } from '../Contexts/AuthContextProvider';
+import Loading from './Loading';
 
 const Chats = () => {
 
@@ -59,19 +61,27 @@ const Chats = () => {
     history("/");
   }
 
-  if (!user || loading) return "Loading..."
+  if (!user || loading) {
+    return (
+      <>
+        <Loading/>
+      </>
+    )
+  }
+  else {
+    return (
+      <>
+        <Navigation logoutHandler={logoutHandler} />
+        <ChatEngine
+          height="calc(100vh - 65px)"
+          projectID="a1f3d30a-8b80-456b-952d-c1a1807b1f5c"
+          userName={user.email}
+          userSecret={user.uid}
+        />
+      </>
+    );
+  }
 
-  return (
-    <>
-      <Navigation logoutHandler={logoutHandler} />
-      <ChatEngine
-        height="calc(100vh - 65px)"
-        projectID="a1f3d30a-8b80-456b-952d-c1a1807b1f5c"
-        userName={user.email}
-        userSecret={user.uid}
-      />
-    </>
-  );
 };
 
 export default Chats;
