@@ -24,7 +24,7 @@ const Chats = () => {
       headers: {
         "project-id": "a1f3d30a-8b80-456b-952d-c1a1807b1f5c",
         "user-name": user.email,
-        "user-secret": user.uid,
+        "user-secret": user.uid
       }
     })
       .then(() => {
@@ -33,7 +33,7 @@ const Chats = () => {
       .catch(() => {
         let formdata = new FormData();
         formdata.append("email", user.email);
-        formdata.append("username", user.email);
+        formdata.append("username", user.displayName);
         formdata.append("secret", user.uid);
         getFile(user.photoURL)
           .then(avatar => {
@@ -76,7 +76,7 @@ const Chats = () => {
           projectID="a1f3d30a-8b80-456b-952d-c1a1807b1f5c"
           userName={user.email}
           userSecret={user.uid}
-        />
+          />
       </>
     );
   }

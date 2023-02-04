@@ -1,24 +1,22 @@
 .navbar {
-  width: 96%;
-  height: 65px;
+  padding: 1%;
+  height: 50px;
   display: flex;
-  padding: 1% 2% 0 2%;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
   justify-content: space-between;
-  align-content: center;
-  background-color: #c6d2ce;
-  overflow: hidden;
-  box-shadow: 0 1px 8px #888888;
+  border-bottom: solid 1px gray;
 }
 
-.navbar img {
-  width: 50px;
-  height: 50px;
+.navbar span {
+  color: #5b4dcd;
 }
 
 #logout {
   margin: 0;
-  height: 40px;
+  height: 35px;
   color: #ffffff;
-  font-weight: bold;
-  background-color: rgb(202, 60, 60);
+  font-size: 0.9rem;
+  background-color: #4133b3;
 }

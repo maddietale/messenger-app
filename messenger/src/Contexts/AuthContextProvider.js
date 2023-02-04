@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Children  } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
 
@@ -14,6 +14,7 @@ const AuthContextProvider = ({children}) => {
         auth.onAuthStateChanged(user => {
             setUser(user);
             setLoading(false);
+            console.log(user);
             if(user) history("/chats");
         })
     }, [user, history])
