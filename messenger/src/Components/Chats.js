@@ -5,10 +5,9 @@ import { ChatEngine } from 'react-chat-engine';
 import axios from 'axios';
 // Components
 import Navigation from './Navigation';
-
+import Loading from './Loading';
 // Contexts
 import { AuthContext } from '../Contexts/AuthContextProvider';
-import Loading from './Loading';
 
 const Chats = () => {
 
@@ -41,7 +40,7 @@ const Chats = () => {
             formdata.append("avatar", avatar, avatar.name);
             axios.post("https://api.chatengine.io/users/", formdata, {
               headers: {
-                "private-key": "68927ba3-82ff-4632-aaec-60781a18873f",
+                "private-key": "68927ba3-82ff-4632-aaec-60781a18873f"
               }
             })
               .then(() => setLoading(false))
@@ -64,7 +63,7 @@ const Chats = () => {
   if (!user || loading) {
     return (
       <>
-        <Loading/>
+        <Loading />
       </>
     )
   }
@@ -73,7 +72,7 @@ const Chats = () => {
       <>
         <Navigation logoutHandler={logoutHandler} />
         <ChatEngine
-          height="calc(100vh - 65px)"
+          height="calc(100vh - 50px)"
           projectID="a1f3d30a-8b80-456b-952d-c1a1807b1f5c"
           userName={user.email}
           userSecret={user.uid}

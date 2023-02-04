@@ -1,18 +1,11 @@
 .container {
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  padding: 20% 0 0 40%;
 }
 
 .container span {
-  display: block;
-  font-size: 3rem;
-  color: #93b0ed;
-  margin: 12% 0 5% 0;
+  font-size: 2rem;
+  color: #5b4dcd;
   font-family: "Dana-Bold";
-}
-
-.container img {
-    width: 50%;
-    height: 50%;
 }
