@@ -47,18 +47,18 @@ const Chats = () => {
               .catch(error => console.log(error))
           })
       })
-  }, [user, history])
+  }, [user, history]);
 
   const getFile = async (url) => {
     const response = await fetch(url);
     const data = await response.blob();
     return new File([data], "userPhoto.jpg", { type: "image/jpeg" })
-  }
+  };
 
   const logoutHandler = async () => {
     await auth.signOut();
     history("/");
-  }
+  };
 
   if (!user || loading) {
     return (

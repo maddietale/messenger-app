@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #e8f5f9;
   justify-content: space-between;
   border-bottom: solid 1px gray;
 }
@@ -12,8 +12,12 @@
 .user img {
   width: 30px;
   height: 30px;
-  border-radius: 50px;
   margin-left: 5px;
+  border-radius: 50px;
+}
+
+.user span{
+  color: #1890ff;
 }
 
 #logout {
@@ -21,5 +25,5 @@
   height: 35px;
   color: #ffffff;
   font-size: 0.9rem;
-  background-color: #4133b3;
+  background-color: #1890ff;
 }

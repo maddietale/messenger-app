@@ -2,10 +2,11 @@
   width: 100vw;
   height: 100vh;
   padding: 20% 0 0 40%;
+  background-color: #e8f5f9;
 }
 
 .container span {
   font-size: 2rem;
-  color: #5b4dcd;
+  color: #1890ff;
   font-family: "Dana-Bold";
 }
