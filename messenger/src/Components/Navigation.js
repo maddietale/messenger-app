@@ -15,7 +15,7 @@ const Navigation = ({logoutHandler}) => {
             </div>
             <div className={Style.user}>
             <span>{user.displayName}</span>
-            <img src={user.photoURL}/>
+            <img src={user.photoURL} alt='Avatar'/>
             </div>
         </div>
         </>
